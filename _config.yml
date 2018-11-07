@@ -14,21 +14,22 @@ baseurl: "/cosa"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: COSA
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: CHINESE OPEN SYSTEMS ASSOCIATION
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://www.cosa.org.tw"
+  協會簡介: "aboutme"
+  活動展覽:
+    - 活動快訊: "eventlist"
+    - 大事紀: "association-history"
+    - 加入會員: "https://drive.google.com/drive/folders/1Biocj1LYAe1QTUzg3fQ4SmNFQod22ORQ"
+
+  相簿: "https://plus.google.com/u/0/communities/113732342782990539280"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -237,9 +238,14 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-plugins:
+plugins_dir:
   - jekyll-paginate
   - jekyll-sitemap
+
+gems: 
+  - jekyll-paginate
+  - jekyll-sitemap
+
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
