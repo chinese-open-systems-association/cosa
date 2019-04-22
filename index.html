@@ -1,15 +1,16 @@
 ---
 layout: page
 title: COSA
-subtitle: Chinese Open Systems Association
+subtitle: 開放系統&nbsp;&nbsp;&nbsp;&nbsp;贏向未來
 use-site-title: true
+bigimg: ["/img/bg1.gif", "/img/bg2.gif"]
 ---
 
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">     
-	  <h2 class="post-title">{{ post.title }}</h2>
+	  <h2 class="post-title" style="color: #e40010;">{{ post.title }}</h2>
 
 	  {% if post.subtitle %}
 	  <h3 class="post-subtitle">
@@ -36,7 +37,7 @@ use-site-title: true
         </tbody>
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[詳細內容...]</a>
         {% endif %}
       </div>
     </div>
@@ -62,12 +63,12 @@ use-site-title: true
 <ul class="pager main-pager">
   {% if paginator.previous_page %}
   <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 以後的文章</a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
   <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">以前的文章 &rarr;</a>
   </li>
   {% endif %}
 </ul>

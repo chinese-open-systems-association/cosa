@@ -8,21 +8,22 @@
 #baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-url: "https://jk.cosa.org.tw"
-baseurl: "/"
+ url: "https://jk.cosa.org.tw"
+ baseurl: ""
 
 # Of course don't forget to change the username and projectname to YOUR username and project
+ repository: "chinese-open-systems-association/cosa"
 
 # Name of website
-title: COSA
+ title: COSA
 
 # Short description of your site
-description: CHINESE OPEN SYSTEMS ASSOCIATION
+ description: CHINESE OPEN SYSTEMS ASSOCIATION
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
-navbar-links:
+ navbar-links:
   協會簡介: "aboutme"
   活動展覽:
     - 活動快訊: "eventlist"
@@ -33,25 +34,26 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+ avatar: "/img/c-os-a.gif"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
 # title-img: /path/to/image
+ title-img: "/img/cosa.gif"
 
 # --- Background colour/image options --- #
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
-page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#F5F5F5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
+ navbar-col: "#F5F5F5"
+ navbar-text-col: "#404040"
+ navbar-children-col: "#F5F5F5"
+ page-col: "#FFFFFF"
+ link-col: "#008AFF"
+ hover-col: "#0085A1"
+ footer-col: "#F5F5F5"
+ footer-text-col: "#777777"
+ footer-link-col: "#404040"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
@@ -64,19 +66,19 @@ footer-link-col: "#404040"
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: Some Person
+ author:
+  name: 中華民國開放系統協會
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-social-network-links:
+ social-network-links:
   rss: true
   email: "cosa@cosa.org.tw"
-  facebook: cosa.new
-  github: 
-  twitter: 
+#  facebook: 
+  github: chinese-open-systems-association
+#  twitter: 
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
@@ -92,7 +94,7 @@ social-network-links:
 #  yelp: yourname
 
 # Select which share links to show in posts
-share-links-active:
+ share-links-active:
   twitter: true
   facebook: true
   google: false
@@ -100,7 +102,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+ url-pretty: "cosa.org.tw"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -137,29 +139,29 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
-excerpt_separator: <!--more-->
+ excerpt_length: 50
+ excerpt_separator: <!--more-->
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-title-separator: "-"
+ title-separator: "-"
 
 #allow post's date is in the future
-future: true
+ future: true
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
-markdown: kramdown
-highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
+ timezone: "Asia/Taipei"
+ markdown: kramdown
+ highlighter: rouge
+ permalink: /:year-:month-:day-:title/
+ paginate: 5
 
-kramdown:
+ kramdown:
   input: GFM
 
 # Default YAML values (more information on Jekyll's site)
-defaults:
+ defaults:
   -
     scope:
       path: ""
@@ -176,10 +178,10 @@ defaults:
       show-avatar: true
 
 # Use tags index page and make tags on each post clickable
-link-tags: true
+ link-tags: true
 
 # Exclude these files from production site
-exclude:
+ exclude:
   - CHANGELOG.md
   - CNAME
   - Dockerfile
@@ -190,7 +192,7 @@ exclude:
   - Vagrantfile
 
 # prose.io config
-prose:
+ prose:
   rooturl: '_posts'
   media: 'img'
   ignore:
@@ -241,11 +243,11 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-plugins_dir:
+ plugins_dir:
   - jekyll-paginate
   - jekyll-sitemap
 
-gems: 
+ plugins: 
   - jekyll-paginate
   - jekyll-sitemap
 
