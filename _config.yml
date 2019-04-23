@@ -24,13 +24,18 @@
 
 # List of links in the navigation bar
  navbar-links:
-  協會簡介: "aboutme"
+  關於我們:
+    - 協會簡介: "aboutme"
+    - 歷史資料: "https://org.cosa.org.tw"
   活動展覽:
     - 活動快訊: "eventlist"
     - 大事紀: "association-history"
     - 加入會員: "https://drive.google.com/drive/folders/1Biocj1LYAe1QTUzg3fQ4SmNFQod22ORQ"
 
   相簿: "https://plus.google.com/u/0/communities/113732342782990539280"
+
+ extlinks:
+  attributes: {rel: nofollow, target: _blank}
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -102,7 +107,7 @@
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
- url-pretty: "cosa.org.tw"  # eg. "deanattali.com/beautiful-jekyll"
+ url-pretty: "COSA"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
