@@ -32,7 +32,7 @@
     - 大事紀: "association-history"
     - 加入會員: "https://drive.google.com/drive/folders/1Biocj1LYAe1QTUzg3fQ4SmNFQod22ORQ"
 
-  相簿: "https://plus.google.com/u/0/communities/113732342782990539280"
+  相簿: #"https://plus.google.com/u/0/communities/113732342782990539280"
 
  extlinks:
   attributes: {rel: nofollow, target: _blank}
