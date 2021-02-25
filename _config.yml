@@ -31,9 +31,10 @@
   活動展覽:
     - 活動快訊: "eventlist"
     - 大事紀: "issue"
-    - 加入會員: "joinus"
-
+  
   相簿: "https://www.cosa.org.tw/Gallery"
+
+  加入會員: "joinus"
 
  extlinks:
   attributes: {rel: nofollow, target: _blank}
